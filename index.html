@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Joffrey Bienvenu - Développeur: Sites web / App mobiles / Logiciels</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700|Open+Sans|La+Belle+Aurore" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <script>
+        function initMenu() {
+            let frame = window.frames['menu'];
+            let pathname = window.location.pathname;
+            frame.setMenu(pathname);
+        }
+    </script>
+</head>
+<body>
+
+<iframe name="menu" class="frame-menu" src="./menu.html"></iframe>
+
+<section>
+    <span class="tags tag-top">&#8249;/header&rsaquo;</span>
+
+    <article>
+        <h1>
+            <p>Bonjour,</p>
+            <p>Je suis Joffrey,</p>
+            <p>développeur.</p>
+        </h1>
+        <div class="underline">
+            <h2>
+                /. Sites internet /. Applications mobiles<br>/. Agents conversationnels /. Génie logiciel
+            </h2>
+            <a rel="contact" href="./contact.html" class="blue-button">Me contacter</a>
+        </div>
+    </article>
+
+    <aside class="home-aside">
+        <div id="circle-container">
+            <div class="profile-image"></div>
+            <div class="halfclip">
+                <div class="halfcircle" id="halfcircle-right"></div>
+            </div>
+            <div class="halfclip" id="halfclip-left">
+                <div class="halfcircle" id="halfcircle-left"></div>
+            </div>
+        </div>
+    </aside>
+
+    <span class="tags tag-bottom">&#8249;/footer&rsaquo;</span>
+</section>
+
+</body>
+</html>

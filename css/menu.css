@@ -1,0 +1,113 @@
+body {
+    overflow: hidden;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+.navbar {
+    background: #181818;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    min-height: 500px;
+}
+
+.logo {
+    background: #070707;
+    display: block;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.j {
+    font-family: 'Ubuntu', sans-serif;
+    color: #08fdd8;
+    font-size: 2.8rem;
+    line-height: 2.3rem;
+}
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 0.6rem;
+    margin-top: 8px;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    margin-top: -120px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#home-svg, #about-svg, #skills-svg, #gallery-svg, #contact-svg {
+    fill-rule: evenodd;
+    fill: #4d4d4e;
+}
+
+.menu-element {
+    display: block;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.menu-element svg {
+    transition: all 0.3s ease-out;
+}
+
+.menu-element:hover svg {
+    opacity: 0;
+}
+
+.menu-element:after {
+    content: '';
+    font-size: 9px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    padding-bottom: 22px;
+    color: #08fdd8;
+    letter-spacing: 1px;
+}
+
+.menu-element:hover:after {
+    opacity: 1;
+}
+
+#a-index:after {
+    content: 'ACCUEIL';
+}
+
+#a-about:after {
+    content: 'À PROPOS'
+}
+
+#a-skills:after {
+    content: 'COMPÉ TENCES'
+}
+
+#a-gallery:after {
+    content: 'MES TRAVAUX'
+}
+
+#a-contact:after {
+    content: 'CONTACT'
+}
+
+.menu-icon-activated {
+    fill: #08fdd8 !important;
+}

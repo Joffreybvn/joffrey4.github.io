@@ -1,0 +1,168 @@
+article {
+    width: 32%;
+}
+
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #08fdd8;
+    font-size: 3.1rem;
+    line-height: 3.7rem;
+    margin-bottom: 40px;
+}
+
+input {
+    line-height: normal;
+    color: inherit;
+    margin: 0;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+}
+
+.contact-text {
+    font-family: "Open Sans", sans-serif;
+    line-height: 18px;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form ul li.half:first-child {
+    margin-left: 0;
+}
+
+.contact-form ul li.half {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+
+.contact-form ul li {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 50px;
+    font-size: 16px;
+    color: #b9b9b9;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 50px;
+    font-size: 16px;
+    color: #b9b9b9;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+/* Hide Placeholder */
+:focus {
+    outline: none;
+}
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+:focus::-moz-placeholder {
+    opacity: 0;
+}
+:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.contact-form .blue-button {
+    margin-top: 0;
+    float: right;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #08fdd8;
+    width: 0;
+    transition: width 500ms ease;
+}
+
+#message .slider {
+    bottom: 4px;
+}
+
+.contact-form li#name:hover .slider,
+.contact-form li#email:hover .slider,
+.contact-form li#subject:hover .slider,
+.contact-form li#message:hover .slider{
+    width: 100%;
+}
+
+.contact-aside {
+    float: right;
+    width: 53%;
+    margin-top: -3%;
+    height: 115%;
+    background: rgba(8, 253, 216,0.1);
+}
+
+#map {
+    height: 100%;
+}
+
+.inf-map {
+    position: absolute;
+    background: #000;
+    top: 90px;
+    right: 30%;
+    padding: 20px;
+    color: #fff;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-size: 17px;
+    z-index: 999999;
+}
+
+.inf-map a {
+    color: inherit;
+}
+
+.inf-map a:hover {
+    color: #08fdd8;
+}
+
+.inf-map img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
