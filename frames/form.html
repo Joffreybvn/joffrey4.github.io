@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Joffrey Bienvenu - Formulaire de contact</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/minireset.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+
+    <script>
+        function onSubmit(token) {
+            //document.getElementById("contact").submit();
+            window.parent.closeFrame();
+        }
+    </script>
+</head>
+<body>
+<form id="contact" autocomplete="off" accept-charset="UTF-8" action="https://usebasin.com/f/3ca9092af971" method="POST">
+    <input type="hidden" name="email" value="joffreybvn@gmail.com">
+    <ul>
+        <li class="half" id="name">
+            <input type="text" name="name" placeholder="Nom"><span class="slider"></span>
+        </li>
+        <li class="half" id="email">
+            <input type="email" name="origin" placeholder="Email"><span class="slider"></span>
+        </li>
+        <li id="subject">
+            <input type="text" name="subject" placeholder="Sujet"/><span class="slider"></span>
+        </li>
+        <li id="message">
+            <textarea name="message" placeholder="Message"></textarea><span class="slider"></span>
+        </li>
+        <li>
+            <input type="submit" value="Envoyer" class="blue-button g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">
+        </li>
+    </ul>
+</form>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

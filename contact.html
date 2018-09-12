@@ -10,17 +10,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
 
+    <script src="./js/initMenu.js"></script>
     <script>
-        function initMenu() {
-            let frame = window.frames['menu'];
-            let pathname = window.location.pathname;
-            frame.setMenu(pathname);
+        function closeFrame () {
+            document.getElementById("frame-form").src = './frames/form-confirm.html'
         }
     </script>
 </head>
 <body>
 
-<iframe name="menu" class="frame-menu" src="./menu.html"></iframe>
+<iframe name="menu" class="frame-menu" src="frames/menu.html"></iframe>
 
 <section>
     <span class="tags tag-top">&#8249;/header&rsaquo;</span>
@@ -28,26 +27,8 @@
     <article>
         <h1>Contactez-moi</h1>
         <div class="contact-form">
-            <div class="contact-text">Je réponds à toutes vos questions, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous:</div>
-            <form id="contact" autocomplete="off" action="https://formspree.io/joffreybvn@gmail.com" method="POST">
-                <ul>
-                    <li class="half" id="name">
-                        <input type="text" name="name" placeholder="Nom"><span class="slider"></span>
-                    </li>
-                    <li class="half" id="email">
-                        <input type="email" name="_replyto" placeholder="Email"><span class="slider"></span>
-                    </li>
-                    <li id="subject">
-                        <input type="text" name="_subject" placeholder="Sujet"/><span class="slider"></span>
-                    </li>
-                    <li id="message">
-                        <textarea name="message" placeholder="Message"></textarea><span class="slider"></span>
-                    </li>
-                    <li>
-                        <input type="submit" value="Envoyer" class="blue-button">
-                    </li>
-                </ul>
-            </form>
+            <div class="contact-text">Je réponds à toutes vos questions, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous.</div>
+            <iframe name="form" id="frame-form" class="frame-form" src="frames/form.html"></iframe>
         </div>
     </article>
 
@@ -67,153 +48,12 @@
 
     <aside class="contact-aside">
         <div id="map"></div>
-        <script>
-            function initMap() {
-                var myLatLng = {lat: 50.381361, lng: 4.383371};
-
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 7,
-                    center: myLatLng,
-                    disableDefaultUI: true,
-                    styles: [
-                        {
-                            "featureType": "administrative",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "saturation": "-100"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative.province",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "visibility": "off"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "landscape",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "saturation": -100
-                                },
-                                {
-                                    "lightness": 65
-                                },
-                                {
-                                    "visibility": "on"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "poi",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "saturation": -100
-                                },
-                                {
-                                    "lightness": "50"
-                                },
-                                {
-                                    "visibility": "simplified"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "saturation": "-100"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "visibility": "simplified"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "lightness": "30"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "road.local",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "lightness": "40"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "transit",
-                            "elementType": "all",
-                            "stylers": [
-                                {
-                                    "saturation": -100
-                                },
-                                {
-                                    "visibility": "simplified"
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "water",
-                            "elementType": "geometry",
-                            "stylers": [
-                                {
-                                    "hue": "#ffff00"
-                                },
-                                {
-                                    "lightness": -25
-                                },
-                                {
-                                    "saturation": -97
-                                }
-                            ]
-                        },
-                        {
-                            "featureType": "water",
-                            "elementType": "labels",
-                            "stylers": [
-                                {
-                                    "lightness": -25
-                                },
-                                {
-                                    "saturation": -100
-                                }
-                            ]
-                        }
-                    ]
-                });
-
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    title: 'Hello World!'
-                });
-            }
-        </script>
     </aside>
 
     <span class="tags tag-bottom">&#8249;/footer&rsaquo;</span>
 </section>
 
+<script src="./js/map.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrurKRTI5ZYXZGFt9pV1-9k-sVbur24OA&callback=initMap"></script>
 </body>
 </html>

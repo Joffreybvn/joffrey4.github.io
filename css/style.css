@@ -10,14 +10,6 @@ body {
     overflow: hidden;
 }
 
-iframe {
-    width: 60px;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: 3;
-}
-
 section {
     position: absolute;
     width: 100%;
@@ -54,11 +46,20 @@ a {
     background: transparent;
     text-transform: uppercase;
     text-align: center;
+    cursor: pointer;
 }
 
 .blue-button:hover {
     background: #08fdd8;
     color: #252627;
+}
+
+.frame-menu {
+    width: 60px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
 }
 
 .tags {

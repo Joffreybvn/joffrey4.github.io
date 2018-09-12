@@ -6,7 +6,7 @@ let init = () => {
 };
 
 function setMenu(pathname) {
-    pathname = pathname.replace("/jbvn.be", ""); // TODO: Delete this line on production
+    //pathname = pathname.replace("/jbvn.be", ""); // TODO: Delete this line on production
     switch(pathname) {
 
         case "/index.html":

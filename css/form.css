@@ -1,0 +1,111 @@
+input {
+    line-height: normal;
+    color: inherit;
+    margin: 0;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+}
+
+body {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li.half:first-child {
+    margin-left: 0;
+}
+
+ul li.half {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+
+ul li {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 50px;
+    font-size: 16px;
+    color: #b9b9b9;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 50px;
+    font-size: 16px;
+    color: #b9b9b9;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+input[type="submit"] {
+    margin-top: 0;
+    float: right;
+}
+
+/* Hide Placeholder */
+:focus {
+    outline: none;
+}
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+:focus::-moz-placeholder {
+    opacity: 0;
+}
+:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.slider {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #08fdd8;
+    width: 0;
+    transition: width 500ms ease;
+}
+
+#message .slider {
+    bottom: 4px;
+}
+
+li#name:hover .slider,
+li#email:hover .slider,
+li#subject:hover .slider,
+li#message:hover .slider{
+    width: 100%;
+}
+
+.grecaptcha-badge {
+    display: none;
+}
