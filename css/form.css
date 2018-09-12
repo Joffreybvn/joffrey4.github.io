@@ -105,7 +105,3 @@ li#subject:hover .slider,
 li#message:hover .slider{
     width: 100%;
 }
-
-.grecaptcha-badge {
-    display: none;
-}

@@ -13,7 +13,9 @@
     <script src="./js/initMenu.js"></script>
     <script>
         function closeFrame () {
-            document.getElementById("frame-form").src = './frames/form-confirm.html'
+            setTimeout(() => {
+                document.getElementById("frame-form").src = './frames/form-confirm.html'
+            }, 500);
         }
     </script>
 </head>
