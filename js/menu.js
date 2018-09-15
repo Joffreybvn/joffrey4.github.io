@@ -1,7 +1,9 @@
 let thisPage;
 
 let init = () => {
-    window.parent.initMenu();
+    setTimeout(() => {
+        window.parent.initMenu();
+    }, 500);
     return true
 };
 
