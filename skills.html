@@ -11,15 +11,6 @@
     <link rel="stylesheet" type="text/css" href="css/skills.css">
 
     <script data-cfasync="false" src="js/initMenu.js"></script>
-    <script type="text/javascript">
-        window.onload = function() {
-            try {
-                TagCanvas.Start('skillsCanvas');
-            } catch(e) {
-                document.getElementById('canvas-container').style.display = 'none';
-            }
-        };
-    </script>
 </head>
 <body>
 
@@ -44,7 +35,7 @@
     </article>
 
     <aside class="skills-aside">
-        <div class="canvas-container">
+        <div id="canvas-container">
             <canvas width="500" height="500" id="skillsCanvas">
                 <ul>
                     <li><a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank">HTML 5</a></li>
@@ -100,6 +91,15 @@
     <span class="tags tag-bottom">&#8249;/footer&rsaquo;</span>
 </section>
 
-<script async defer src="js/tagcanvas.js"></script>
+<script src="js/tagcanvas.js"></script>
+<script data-cfasync="false" type="text/javascript">
+    window.onload = function() {
+        try {
+            TagCanvas.Start('skillsCanvas');
+        } catch(e) {
+            document.getElementById('canvas-container').style.display = 'none';
+        }
+    };
+</script>
 </body>
 </html>
