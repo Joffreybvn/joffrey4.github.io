@@ -1,0 +1,24 @@
+article {
+    width: 100%;
+    position: relative;
+    left: initial;
+    max-height: initial;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #08fdd8;
+    font-size: 9rem;
+    line-height: 7rem;
+}
+
+.notfound-text {
+    font-family: "Open Sans", sans-serif;
+    line-height: 18px;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
