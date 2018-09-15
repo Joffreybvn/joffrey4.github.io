@@ -1,20 +1,14 @@
 let thisPage;
 
 let init = () => {
-    setTimeout(() => {
-        window.parent.initMenu();
-    }, 500);
+    window.parent.initMenu((callback) => {
+        setMenu(callback)
+    });
     return true
 };
 
 function setMenu(pathname) {
-    //pathname = pathname.replace("/jbvn.be", ""); // TODO: Delete this line on production
     switch(pathname) {
-
-        case "/index.html":
-            document.getElementById("home-svg").classList.add('menu-icon-activated');
-            thisPage = 'home-svg';
-            break;
 
         case "/about.html":
             document.getElementById("about-svg").classList.add('menu-icon-activated');
@@ -35,6 +29,14 @@ function setMenu(pathname) {
             document.getElementById("contact-svg").classList.add('menu-icon-activated');
             thisPage = 'contact-svg';
             break;
+
+        case "/404.html":
+            break;
+
+        case "/index.html":
+        default:
+            document.getElementById("home-svg").classList.add('menu-icon-activated');
+            thisPage = 'home-svg';
     }
 }
 

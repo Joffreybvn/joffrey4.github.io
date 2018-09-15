@@ -10,12 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
 
+    <script src="js/initMenu.js"></script>
     <script>
-        function initMenu() {
-            let frame = window.frames['menu'];
-            let pathname = window.location.pathname;
-            frame.setMenu(pathname);
-        }
         function closeFrame () {
             setTimeout(() => {
                 document.getElementById("frame-form").src = './frames/form-confirm.html'
