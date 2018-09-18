@@ -33,7 +33,7 @@ readonly OPTION_7="
 "
 
 download () {
-  wget "$URL_PREFIX"/"$1" || err "
+  curl -O "$URL_PREFIX"/"$1" || err "
 ERROR: $1 could not be downloaded. Please try again later.
 "
 }
