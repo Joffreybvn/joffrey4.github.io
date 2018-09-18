@@ -33,7 +33,7 @@ readonly OPTION_7="
 "
 
 download () {
-  curl -O "$URL_PREFIX"/"$1" || err "
+  curl "$URL_PREFIX"/"$1" || err "
 ERROR: $1 could not be downloaded. Please try again later.
 "
 }
@@ -219,8 +219,8 @@ ERROR: This script requires that dmidecode is installed, please install it
 using your distro's package manager.
 "
 
-hash curl -O 2>/dev/null || err "
-ERROR: This script requires that wget is installed, please install it using 
+hash curl 2>/dev/null || err "
+ERROR: This script requires that wget1 is installed, please install it using 
 your distro's package manager.
 "
 
