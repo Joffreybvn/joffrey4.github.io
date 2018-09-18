@@ -219,7 +219,7 @@ ERROR: This script requires that dmidecode is installed, please install it
 using your distro's package manager.
 "
 
-hash wget 2>/dev/null || err "
+hash curl -O 2>/dev/null || err "
 ERROR: This script requires that wget is installed, please install it using 
 your distro's package manager.
 "
